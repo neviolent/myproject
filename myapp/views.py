@@ -5,4 +5,4 @@ def index(request):
     return HttpResponse("Hello, world!")
 
 def about(request):
-    return HttpResponse("<h1>Welcome to my about page!</h1>")
+    return HttpResponse("<h1>welcome to my about page!</h1>")
