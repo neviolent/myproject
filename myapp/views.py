@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.db.models import Count
 
 def index(request):
-    return HttpResponse("Hello, world!")
+    return render(request, './resources/templates/index.html')
 
 def about(request):
-    return HttpResponse("<h1>welcome to my about page!</h1>")
+    return render(request, './resources/templates/about.html')
+

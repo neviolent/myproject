@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  background-color: #100f1f;
+}
+
+.container {
+    width: 90%;
+    max-width: 959px;
+    margin: 0 auto;
+
+}
+
+.logo {
+    position: relative;
+    padding-top: 50px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.logo-img {
+position: relative;
+display: flex;
+float: left;
+width: 40%; height: 40%;
+    min-height: 300px;
+
+background: url(images/icon.png);
+background-size: cover;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    line-height: 6.5;
+}
+
+.cont {
+    margin-bottom: 100px;
+}
+
+.contaier-one {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+    border-radius: 40px;
+}
+
+.contaier-one::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(98.43deg, #FB42FF 0%, #5E0FFF 99.41%);
+    filter: blur(16.5px);
+
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contaier-one-text {
+text-align: justify;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+line-height: 1.5;
+padding: 30px;
+color: #000000;
+}
+
+.img-d7de355e975168c0729ce3c61b0080de {
+    position: relative;
+width: 164px;
+height: 164px;
+    display: flex;
+float: left;
+
+background: url(images/d7de355e975168c0729ce3c61b0080de.png) no-repeat;
+    background-size: contain;
+    margin-bottom: 35px;
+}
+
+.zavual-text {
+
+position: relative;
+width: 585px;
+height: 66px;
+
+background: #BEBBD2;
+border-radius: 15px;
+}
+
+.zvezda {
+    position: relative;
+    display: flex;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(images/5bf4bcc6c692d7703f2a7d64536f3dd4.png) no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.cont-otziv-index {
+    position: relative;
+    width: 585px;
+    display: flex;
+float: right;
+    margin-bottom: 10px;
+}
+
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+background: radial-gradient(100% 100% at 50% 0%, #7834A4 0%, #4834A5 100%);
+border-radius: 40px;
+}
+
+.button-text {
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 59px;
+text-align: center;
+    color: white;
+}
