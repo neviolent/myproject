@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?ver=14">
+    <script src = "{% static 'js/common.js' %}?ver=12"></script>
+    <title>Product Reviews</title>
+    <meta name="viewport" content="user-scalable=no">
+</head>
+<body>
+
+
+<input type="checkbox" id="side-checkbox" />
+<div class="side-panel">
+    <label class="side-button-2" for="side-checkbox">+</label>
+    <div class="side-title"><img src="../images/icon.png"><p>Product Reviews</p></div>
+    <ul>
+   <li><a href="index.html">Главная</a>
+   <li><a href="#2">Профиль</a>
+   <li><a href="#3">О приложении</a>
+   <li style="margin-top: 20px; border-top: 2px solid #BFE2FF; padding-top: 30px !important;"><a href="#4" >Выйти</a>
+
+</ul>
+</div>
+<div class="side-button-1-wr">
+    <label class="side-button-1" for="side-checkbox">
+    </label>
+</div>
+
+
+
+
+
+    <div class="container">
+        <div class="head">
+
+        <label class="menu-img" for="side-checkbox"></label>
+            <div class="user-icon"></div>
+        </div>
+
+        <div style="margin-top: 70%;">
+        <!-- Кнопка без функционала, для красоты -->
+        <div class="button"><div class="button-text">ОТСКАНИРУЙТЕ ШТРИХКОД</div></div>
+        <div class="default-center-text">ИЛИ</div>
+        <form method="POST" action="{% url 'review_search' %}">
+            {% csrf_token %}
+                <div class="cont" style="margin-top: 30px;">
+                        <div class="contaier-one">
+                            <div class="contaier-one-text" style="text-align: left !important;">
+                                <div class="img-code"></div>
+                                <div class="cont-reg-input" style="width: 65% !important; float: left !important; margin-left: 30px; margin-bottom: 0;">
+                                    <input name="barcode" class="reg_input" placeholder="Введите артикул вручную">
+                                </div>
+                                <button class="img-arrow" type = "submit"></button>
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                </div>
+            </form>
+        </div>
+</body>
+</html>

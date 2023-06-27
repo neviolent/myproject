@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?ver=3">
+    <script src = "{% static 'js/common.js' %}?ver=2"></script>
+    <title>Product Reviews</title>
+    <meta name="viewport" content="user-scalable=no">
+</head>
+<body>
+
+
+<input type="checkbox" id="side-checkbox" />
+<div class="side-panel">
+    <label class="side-button-2" for="side-checkbox">+</label>
+    <div class="side-title"><img src="images/icon.png"><p>Product Reviews</p></div>
+    <ul>
+   <li><a href="index.html">Главная</a>
+   <li><a href="#2">Профиль</a>
+   <li><a href="#3">О приложении</a>
+   <li style="margin-top: 20px; border-top: 2px solid #BFE2FF; padding-top: 30px !important;"><a href="#4" >Выйти</a>
+
+</ul>
+</div>
+<div class="side-button-1-wr">
+    <label class="side-button-1" for="side-checkbox">
+    </label>
+</div>
+
+
+
+<input type="checkbox" id="side-checkbox-2" />
+<div class="side-panel-2">
+    <div class="cont-newreview"></div>
+    <label class="side-button-2" for="side-checkbox-2">+</label>
+    <span class="product-name" style="font-size: 25px !important;">Название продукта {{ serialized_data.product_barcode }}</span>
+    <textarea class="review-textarea" style="height: 6% !important;" placeholder="Заголовок отзыва"></textarea>
+    <select class="review-textarea" style="height: 6% !important;">
+        <option>Оценка</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
+    <textarea class="review-textarea" placeholder="Достоинства"></textarea>
+    <textarea class="review-textarea" placeholder="Недостатки"></textarea>
+    <textarea class="review-textarea" style="height: 30% !important;" placeholder="Напишите отзыв"></textarea>
+    <button class="button" style="margin-top: 30px !important; height: 10% !important; background: #fff !important;" for="side-checkbox-2"><div class="button-text" style="color: #4834A5">Отправить</div></button>
+
+</div>
+<div class="side-button-1-wr">
+    <label class="side-button-1" for="side-checkbox">
+    </label>
+</div>
+
+
+
+
+
+    <div class="container">
+        <div class="head">
+
+        <label class="menu-img" for="side-checkbox"></label>
+            <div class="user-icon"></div>
+        </div>
+
+        <div class="product-info">
+                <div class="substrate"><img src="images/394183_1.jpeg"></div>
+                <div class="product-info-text">
+                    <span class="product-name">Название продукта</span>
+                    <div class="cont-otziv-index">
+                            <!-- Циклом вывести кол-во звезд (рейтинг) -->
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                    </div>
+                    <span class="product-description">Описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание</span>
+
+                </div>
+
+        </div>
+
+
+        <label class="button" style="margin-top: 30px !important;" for="side-checkbox-2"><div class="button-text">Написать отзыв</div></label>
+        <div class="container-review">
+            <div class="reviewer"><img src="images/f3fdbcs73fh234rj69vn74.png"><p>Лев Н.Т.</p></div>
+            <div class="review">
+                <div class="product-review-text">
+                    <span class="review-name">Название продукта какого-нибудь ававав вавав </span>
+                    <span class="date">10.05.2023</span>
+                    <div class="cont-otziv-index">
+                        <!-- Циклом вывести кол-во звезд (рейтинг) -->
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                            <div class="zvezda"></div>
+                    </div>
+                    <div class="h1-review">Достоинства:</div>
+                    <span class="text1-review">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</span>
+                    <div class="h1-review">Недостатки:</div>
+                    <span class="text1-review">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</span>
+                    <br><br>
+                    <span class="text2-review">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</span>
+
+                    <a href="#" class="text1-review">Прочитать полностью</a>
+
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+</body>
+</html>

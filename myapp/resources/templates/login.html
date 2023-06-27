@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}?ver=2">
+    <script src = "{% static 'js/common.js' %}?ver=2"></script>
+    <title>Проект</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+                <a href=""><div class="logo-img"></div></a>
+                <div class="logo-text">Авторизация</div>
+            </div>
+
+        <form method="POST" action="{% url 'login_process' %}">
+            {% csrf_token %}
+
+
+        <!-- Email -->
+        <div class="cont">
+                <div class="contaier-one">
+                    <div class="contaier-one-text" style="text-align: left !important;">
+                        <div class="img-f3fdbcs73fh234rj69vn74"></div>
+                        <div class="cont-reg-input">
+                            <input name="email" class="reg_input" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Password -->
+        <div class="cont">
+                <div class="contaier-one">
+                    <div class="contaier-one-text" style="text-align: left !important;">
+                        <div class="img-f3fdbcs73fh234rj69vn74"></div>
+                        <div class="cont-reg-input">
+                            <input name="password" class="reg_input" placeholder="Пароль">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <button class="button"><div class="button-text">ВОЙТИ</div></button>
+
+        </form>
+</body>
+</html>

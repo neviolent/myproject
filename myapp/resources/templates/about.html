@@ -1,10 +1,25 @@
+{% load static %}
+<!-- barcode.html -->
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        Страница about
-    </head>
-    <body>
-
-    </body>
+<head>
+    <title>Barcode Data</title>
+</head>
+<body>
+    <h1>Barcode Data:</h1>
+    <ul>
+        {% for barcode in barcodes %}
+            <li>
+                Barcode: {{ barcode.barcode }}<br>
+                Product Name: {{ barcode.product_name }}<br>
+                Product Producer: {{ barcode.product_producer }}<br>
+                Product Description: {{ barcode.product_description }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
 </html>
+
+
+
